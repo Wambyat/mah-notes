@@ -10,9 +10,11 @@
 
 + [Hash](#hash)
 
++ [Consensus](#consensus)
+
 ### Cryptography
 
-Why? To achieve the CIA triad i.e. Confidentiality, Integrity, Availability and Non - Repudiation.
+Why? To achieve the CIA triad i.e. Confidentiality, Integrity, Availability and Non - Repudiation. Non - repudiation is Sender of the information cannot deny at a later stage their intentions in the creation or transmission of the information.
 
 2 basic types of ciphers. Symmetric and non symmetric.
 
@@ -59,3 +61,35 @@ This is a digital fingerprint. They use the standard Public Key Infrastructure. 
 #### Hash
 
 The usual. MD-5, SHA-1, SHA-256 (bitcoin), Keccak-256 (Ethereum).
+
+## Consensus
+
+## Smart Contracts
+
+A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code.
+
+Advantages of using a smart contract
+
++ Autonamity
+
++ Trust
+
++ Security
+
++ Backup
+
++ Safety
+
++ Speed
+
++ Saving
+
+A smart contract is made out of
+
+<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-23-43-14-image.png" title="" alt="" data-align="center">
+
+This is a contract written in solidity
+
+<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-23-45-27-image.png" title="" alt="" data-align="center">
+
+This notes is small cuz unit 2 is stupid stuff lol
