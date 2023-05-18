@@ -10,7 +10,17 @@
 
 + [Proof Of Authority](#proof-of-authority)
 
++ [Proof Of Elapsed Time](#proof-of-elapsed-time)
+
++ [Proof Of Space](#proof-of-space)
+
++ [Proof Of Burn](#proof-of-burn)
+
 + [Fork](#fork)
+
++ [PAXOS](#paxos)
+
++ [RAFT](#raft)
 
 ## Consensus
 
@@ -56,7 +66,7 @@ A random node is chosen and the block they proposed are checked. They place a st
 | Scales better    | Can centralise through wealth                    |
 | Harder to attack | 51% risk. We need to control 51% of the network. |
 
-#### Delegated proof of stake
+### Delegated proof of stake
 
 Here we vote for a bunch of people who in turn vote on the block. This increases centralisation a lot.
 
@@ -115,7 +125,15 @@ Steps:
 
 ## Proof of Burn
 
+Proof of Burn is used by Slimcoin, TGCoin and Factom. We promote periodic burning of coins to promote equality between old and now nodes.
 
+We spend a set of coins to an unspendable escrow account. The person who sends the most wins and can add their block. This promotes constant transactions.
+
+| Pros                                           | Cons                                  |
+| ---------------------------------------------- | ------------------------------------- |
+| Less power needed. Cheap and easy to maintain. | Needs wealthy participants to start.  |
+| Motivates more spending.                       | Not proven to work on a large network |
+| Scalable and used for long term stuff.         | Slower                                |
 
 ---
 
@@ -148,3 +166,33 @@ This is where we change the chain in away that is backwards compatible with the 
 ###### Hard Fork
 
 This is when it is not backwards compatible. This is when the existing rules are loosened. New rules are put. The nodes running the old software will not consider the new nodes as valid.
+
+---
+
+## PAXOS
+
+This is the older consensus algorithm.
+
+3 nodes in PAXOS:
+
++ Proposer: -_-
+
++ Acceptor: Voter
+
++ Learner: Learns based on acceptors
+
+Here we make a timeline for proposals. The largest number is considered the latest.
+
+![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-19-17-image.png)
+
+![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-19-45-image.png)
+
+![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-22-27-image.png)
+
+Here before 11 could be proposed the accept for 10 was already sent. So 10 is chosen.
+
+---
+
+## RAFT
+
+
