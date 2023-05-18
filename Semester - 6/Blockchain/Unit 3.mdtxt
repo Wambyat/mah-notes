@@ -16,11 +16,15 @@
 
 + [Proof Of Burn](#proof-of-burn)
 
++ [Proof of Concept](#proof-of-concept)
+
 + [Fork](#fork)
 
 + [PAXOS](#paxos)
 
 + [RAFT](#raft)
+
++ [PBFT](#pbft)
 
 ## Consensus
 
@@ -137,6 +141,12 @@ We spend a set of coins to an unspendable escrow account. The person who sends t
 
 ---
 
+## Proof of Concept
+
+lol this is just like prototyping
+
+---
+
 ## Fork
 
 This is when there are  2 potential paths the blockchain can go in. This can be because there are some changes in the blockchain. This can be things like adding new features, fixing bugs or a security breach.
@@ -195,4 +205,41 @@ Here before 11 could be proposed the accept for 10 was already sent. So 10 is ch
 
 ## RAFT
 
+The leader proposes the new blocks and the followers vote. 
 
+Steps in the algorithm:
+
+1. Election timeout: Followers wait for leader communication.
+
+2. Candidacy declaration: Timeout triggers a follower to become a candidate.
+
+3. Vote granting: Candidates request votes from other nodes.
+
+4. Majority vote: If a candidate gets a majority of votes, it becomes the leader.
+
+5. Heartbeats and leader confirmation: The leader sends periodic heartbeats to maintain authority.
+
+6. Handling split votes: If no majority is reached, a new election is initiated.
+
+7. Handling leader failure: Nodes transition to candidates if no heartbeat is received.
+
+---
+
+## PBFT
+
+Practical Byzantine Fault Tolerance
+
+Client sends request to leader.
+
+Leader sends to the secondary/ backups
+
+If we receive more than m+1 same replies then choose that.
+
+
+
+![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-20-18-32-image.png)
+
+Bad scaling and only one thing controls all.
+
+When a system is violated by an entity by creating and using many false network 
+identities to flood the network and crash the system. This is Sybil attack.
