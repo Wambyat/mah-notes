@@ -49,10 +49,6 @@ This is a way to define a new data type or structure. A class is a template and 
 | Protected | ✅      | ✅       | ✅     | ✅ (Only through a child) |
 | Public    | ✅      | ✅       | ✅     | ✅                        |
 
-
-
-
-
 ### Abstract Class:
 
 + Same like interface but has data types.
@@ -62,23 +58,22 @@ This is a way to define a new data type or structure. A class is a template and 
 ```java
 public abstract class ClassOne {
 
-	public void printSomething()
-	{
-		System.out.println("Hello in abstract class");
-	}
+    public void printSomething()
+    {
+        System.out.println("Hello in abstract class");
+    }
 }
 
 
 class InheritClassOne {
 
-	public static void main(String[] args)
-	{
-		ClassOne obj = new ClassOne() {};
-		
-		obj.printSomething();
-	}
-}
+    public static void main(String[] args)
+    {
+        ClassOne obj = new ClassOne() {};
 
+        obj.printSomething();
+    }
+}
 ```
 
 > Hello in abstract class
@@ -88,30 +83,27 @@ Here it is instantiated by using a anonymous class.  The {} after `ClassOne obj 
 ```java
 public abstract class ClassOne {
 
-	public void printSomething()
-	{
-		System.out.println("Hello in abstract class");
-	}
+    public void printSomething()
+    {
+        System.out.println("Hello in abstract class");
+    }
 }
 
 
 class InheritClassOne {
 
-	public static void main(String[] args)
-	{
-		ClassOne obj = new ClassOne() {
-          	public void printSomething()
-	        {
-		        System.out.println("Hello in the wierdo thing");
-	        }  
+    public static void main(String[] args)
+    {
+        ClassOne obj = new ClassOne() {
+              public void printSomething()
+            {
+                System.out.println("Hello in the wierdo thing");
+            }  
         };
-		
-		obj.printSomething();
-	}
-}
 
+        obj.printSomething();
+    }
+}
 ```
 
 > Hello in the wierdo thing
-
-
