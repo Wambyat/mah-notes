@@ -33,7 +33,7 @@ This is a more proper example. Lazy initialization.
 ```java
 public class Printer {
     private static Printer printer;
-    
+
     private Printer() {
     }
 
@@ -49,9 +49,9 @@ This is **not thread safe** however.
 class Singleton
 {
     private static Singleton obj;
- 
+
     private Singleton() {}
- 
+
     // Only one thread can execute this at a time
     public static synchronized Singleton getInstance()
     {
@@ -111,8 +111,6 @@ This has a few issues:
 
 + Subclasses override the creation method.
 
-
-
 <img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-14-08-30-image.png" title="" alt="" data-align="center">
 
 <img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-14-08-51-image.png" title="" alt="" data-align="center">
@@ -155,8 +153,6 @@ Cons:
 
 One stupid implementation is an open ended conversion. Lets say that we are trying convert from one text format to another. A class called DocxToPdf will be converting a Docx object to pdf object.
 
-
-
 <img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-14-47-image.png" alt="" data-align="center">
 
 Let's see an implementation.
@@ -184,8 +180,6 @@ The director type implementation will also have **polymorphism**.
 <img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-39-24-image.png" title="" alt="" data-align="center">
 
 We can have a prototype registry which is kinda like a factory.
-
-
 
 ---
 
@@ -276,5 +270,3 @@ Class Diagram
 Example for flyweight:
 
 > A pen that has various different refill ink colors. Everything else is shared. So intrinsic attributes will be pen nib, body etc. Extrinsic will be refill color.
-
-
