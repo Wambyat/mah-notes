@@ -20,9 +20,11 @@ OpenAI has a few different models.
 | Curie   | Like Davinci but less detail oriented.                                                         |
 |         |                                                                                                |
 
-
-
 ## Wednesday
+
+Refactoring :)
+
+
 
 ## Thursday
 
