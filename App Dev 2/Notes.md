@@ -2,6 +2,18 @@
 
 This is a compilation of things that i have learnt that I will be using in the project.
 
+# Index
+
+- [JavaScript](#javascript)
+- [Vue](#vue)
+- [Redis and SQLite](#redis-and-sqlite)
+- [Flask](#flask)
+
+---
+
+Please let me know if you need more specific information about any of these topics!
+Feel free to copy the entire index or specific sections as needed. Let me know if there's anything else I can assist you with!
+
 ## JavaScript
 
 ```javascript
@@ -83,7 +95,7 @@ These are all functionally the same.
 
 ##### Arrays
 
-Arrays are like in python. Do whatever u want lmao.
+Mian thing to remember in JS is the all arrays are Objects. Arrays are like in python. Do whatever u want lmao.
 
 **Functions**: `list.keys(), list.entries()`.
 
@@ -98,16 +110,82 @@ let a = {'a':1,'b':'another one'}
 
 `in` can directly iterate over these. `of` cannot. Instead we will have to use Object.entries(a), which in turns returns a key-value pair.
 
-`...x`
+`...x` 'unwraps' a list
+
+```javascript
+x = [1,2,3];
+b = new Array(5);
+b = [4,...x,5]
+//b is [4,1,2,3,5]
+```
+
+...x also makes it so that the values are a copy and not a pointer. By default JS makes pointers not copies.
+
+---
+
+##### Modules and Imports
+
+If we want to use import in HTML call then we have to `<script type='module' src = 'thingy.js'>` regular script definition will not work.
+
+If we want something to be imported in another JS file then we need to add `export` tag to it.
+
+Alternatively we can have a explicit export block at the end.
+
+```javascript
+export {
+    speed as c;
+    useful_func as dummy_func;
+}
+```
+
+`import {c, dummy_func} from './thng.js'` This will import c and dummy_func from thng.js
+
+If we export a `default` thing then it will be wrapped into the first thing it can in the importer.
+
+` export default function(){return "sadness";}`
+
+`import {happy} from './thng.js'`
+
+We can't change the value of imported variables as the scope remains in the original file. TO modify we should do it in the original file.
+
+---
+
+##### "Classes"
+
+This is just a fancy list tbh.
+
+```javascript
+let human = {
+    name: 'Manushya',
+    get na(){
+        return this.name;
+    },
+    set na(n){
+    this.name = n;
+    }
+}
+
+console.log(human.na); //Manushya
+human.na = 'Ningen'
+console.log(human.na); //Ningen
+```
+
+---
 
 ## Vue
 
 Vue stuff
 
+---
+
 ## Redis and SQLite
 
 Redis stuff
 
-## Flask stuff
+---
+
+## Flask
 
 I'm thinking I have to do some listening at port 8000 or something.
+
+---
