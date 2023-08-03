@@ -32,6 +32,8 @@ Strings can be treated as arrays like in python. JS will attempt to coerce varia
 
 Use `===` wherever you can.
 
+---
+
 ##### Templates/ jQuery
 
 ```javascript
@@ -83,6 +85,8 @@ let add = (x,y) => x+y;
 
 These are all functionally the same.
 
+JS auto-ignores extra arguments and also gives `undefined` to parameters that aren't passed
+
 ---
 
 ##### DOM Stuff
@@ -90,6 +94,10 @@ These are all functionally the same.
 `document.getElementById('<ID HERE>')` This gets the thing from DOM and makes it into an object.
 
 `x.addEventListener('click',<func here>)`
+
+`JSON.stringify()` makes the object into a string notation.
+
+`JSON.parse()` makes an object from a string. This object will be a list type. Need not be whatever the original object might have been.
 
 ---
 
@@ -163,18 +171,118 @@ let human = {
     set na(n){
     this.name = n;
     }
+    'add': function (x,y) {
+        return x+y+this.name;
+    }
 }
 
-console.log(human.na); //Manushya
-human.na = 'Ningen'
+console.log(human.na); //Manushya getter
+human.na = 'Ningen'; // setter
 console.log(human.na); //Ningen
+let z = human.add
+//we can do z.add alternatively
+//z.call(<object>,<params>...) This lets us pass different objects.
+z.call(human,"my","name is")
+z.apply(human,["my","name is"])
 ```
+
+`.bind(<params>)` Permanently saves a value to a parameter.
+
+###### Prototypes
+
+This is inheritance. 
+
+```javascript
+let y = {__proto__: human, 'leg': 2}
+console.log(y) //{ 'leg' : 2}
+//Does not print human values but they do exist
+```
+
+---
+
+##### Class
+
+This is the new and actual classes.
+
+```javascript
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+    describe() {
+        return this.name+"ooga boogga"+this.sound;
+    }
+}
+
+//inheritence
+class Dog extends Animal {
+    constructor(name) {
+        super(name);
+        this.sound = 'Bow';
+    }
+}
+```
+
+---
+
+##### Promises
+
+:(
 
 ---
 
 ## Vue
 
-Vue stuff
+More gonna be in a code thingy.
+
+Here we make an object for each thing. 
+
+```javascript
+var app = new Vue({
+    el: "<name of the element>",
+    data: {"<all the data crap u wanna put goes here>"},
+    methods: {"<all the fucntions crap u wanna put goes here>"},
+    computed: {"<This holds all variables that should be run on each call like the size of a list or something>"}
+})
+```
+
+```html
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id = "app">
+        Before vue's nonsense
+        <p>{{ message }}</p>
+        <button v-on:click="clickFunc" v-on:mouseover="mouseFunc"> Say Hi 🔫</button>
+    </div>
+</body>
+<script type="text/javascript" src = "application.js"></script>
+</html>
+```
+
+List of v-on functions:
+
+- click
+
+- mouseover
+
+`v-if, v-else-if, v-else` are if statements.
+
+To get data from the html we use `v-model`
+
+```html
+<input type="text" v-model="name">
+```
+
+`v-for` is a for loop.
+
+```html
+<li v-for="na in names">{{na}}</li>
+```
+
+
 
 ---
 
