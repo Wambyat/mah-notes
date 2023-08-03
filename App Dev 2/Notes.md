@@ -11,9 +11,6 @@ This is a compilation of things that i have learnt that I will be using in the p
 
 ---
 
-Please let me know if you need more specific information about any of these topics!
-Feel free to copy the entire index or specific sections as needed. Let me know if there's anything else I can assist you with!
-
 ## JavaScript
 
 ```javascript
@@ -34,7 +31,7 @@ Use `===` wherever you can.
 
 ---
 
-##### Templates/ jQuery
+#### Templates/ jQuery
 
 ```javascript
 let s = "Hello"
@@ -65,7 +62,7 @@ This will actually return the values of v. This is pythonic. `in` and `of` skips
 
 ---
 
-##### Functions
+#### Functions
 
 ```javascript
 //3 types of declaration
@@ -85,11 +82,13 @@ let add = (x,y) => x+y;
 
 These are all functionally the same.
 
-JS auto-ignores extra arguments and also gives `undefined` to parameters that aren't passed
+JS auto-ignores extra arguments and also gives `undefined` to parameters that aren't passed.
+
+`a.test(b)` "compares" a and b. This can be in the form of Regex so `re.test("aabbbaa")`. Returns True or False.
 
 ---
 
-##### DOM Stuff
+#### DOM Stuff
 
 `document.getElementById('<ID HERE>')` This gets the thing from DOM and makes it into an object.
 
@@ -101,7 +100,7 @@ JS auto-ignores extra arguments and also gives `undefined` to parameters that ar
 
 ---
 
-##### Arrays
+#### Arrays
 
 Mian thing to remember in JS is the all arrays are Objects. Arrays are like in python. Do whatever u want lmao.
 
@@ -131,7 +130,7 @@ b = [4,...x,5]
 
 ---
 
-##### Modules and Imports
+#### Modules and Imports
 
 If we want to use import in HTML call then we have to `<script type='module' src = 'thingy.js'>` regular script definition will not work.
 
@@ -158,7 +157,7 @@ We can't change the value of imported variables as the scope remains in the orig
 
 ---
 
-##### "Classes"
+#### "Classes"
 
 This is just a fancy list tbh.
 
@@ -188,7 +187,7 @@ z.apply(human,["my","name is"])
 
 `.bind(<params>)` Permanently saves a value to a parameter.
 
-###### Prototypes
+##### Prototypes
 
 This is inheritance. 
 
@@ -200,7 +199,7 @@ console.log(y) //{ 'leg' : 2}
 
 ---
 
-##### Class
+#### Class
 
 This is the new and actual classes.
 
@@ -225,15 +224,46 @@ class Dog extends Animal {
 
 ---
 
-##### Promises
+#### Promises
 
-:(
+All `async` functions return a Promise by default. We can use `.then()` To resolve them.
+
+```javascript
+async function hell() {
+    return "Hell is at KR Puram";
+}
+console.log("something");
+hell.then((val) => console.log(val));
+console.log("else");
+```
+
+Remember that `.then`  pretty much makes a new thread.
+
+Another stupid shit is this crap.
+
+```javascript
+async function hell(){
+    return new Promise((resolve,reject) => {
+        setTimeout(function(){
+            resolve("async bullshit")
+        }, 2000);
+    });
+}
+```
+
+This essentially makes it so the Promise auto resolves after 2000 milliseconds.
+
+`await` ensures that the main thread waits for a resolve. This is where this crap is sorta important. We can still do it in the same old way where JS makes it's own promise but idiots do this for some reason.
+
+We can catch the rejects by:
+
+```javascript
+hell().then(<some shit here>).catch(e => {<error shit here>})
+```
 
 ---
 
 ## Vue
-
-More gonna be in a code thingy.
 
 Here we make an object for each thing. 
 
@@ -280,6 +310,127 @@ To get data from the html we use `v-model`
 
 ```html
 <li v-for="na in names">{{na}}</li>
+```
+
+To dynamically add a class to a html tag we can use `v-bind:class="<class name here>"`. This is very useful when we use bootstrap.
+
+#### Components
+
+These are reusable things in Vue. 
+
+```javascript
+Vue.component('message-board',{
+    props:[<List of things u get from the html>],
+    template : `<Jinja esk stuff here>`,
+    data: function() {
+        return {
+            message: "default message"
+        }
+    },
+    methods: {
+        <Functions here>
+    },
+    computed : {
+            <Every call functions here>
+        }
+    }
+})
+```
+
+`<message-board>` Will call the component.
+
+#### Event Raising
+
+`this.$emit("<event name>")`. See code more more details.
+
+> **CHECK WATCH IN VUE** Written below
+
+#### Local Storage
+
+We can store some amount of variables and data on the client side. This is using `localStorage` .
+
+```javascript
+.
+.
+.
+mounted() {
+    if(localStorage.name) {
+        this.name = localStorage.name;
+    }
+},
+watch : {
+    name(newName) {
+        localStorage.name = newName;
+    }
+}
+.
+.
+.
+```
+
+#### Forms
+
+We can make a form like so:
+
+```html
+<form
+  id="app"
+  @submit="checkForm"
+  action="https://vuejs.org/"
+  method="post"
+>
+    <p v-if="errors.length">
+    <b>Please correct the following error(s):</b>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+ </p>
+ 
+ <p>
+    <label for="movie">Favorite Movie</label>
+    <select
+      id="movie"
+      v-model="movie"
+      name="movie"
+    >
+      <option>Star Wars</option>
+      <option>Vanilla Sky</option>
+      <option>Atomic Blonde</option>
+    </select>
+  </p>
+
+  <p>
+    <input
+      type="submit"
+      value="Submit"
+    >
+  </p>
+
+</form>
+```
+
+`@submit` is the function setting thingy. Usually we do like this:
+
+```javascript
+const app = new Vue({
+    el :"#app",
+    data : {
+        movie : null
+        errors : []
+    },
+    methods : {
+        checkForm(e) {
+            this.errors = [];
+            if (!movie) {
+                errors.push("Choose a novie ya git");
+            }
+            else {
+                return True;    
+            }
+            e.preventDefault();
+        }
+    }
+})
 ```
 
 
