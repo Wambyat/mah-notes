@@ -385,7 +385,7 @@ We can make a form like so:
       <li v-for="error in errors">{{ error }}</li>
     </ul>
  </p>
- 
+
  <p>
     <label for="movie">Favorite Movie</label>
     <select
@@ -433,7 +433,7 @@ const app = new Vue({
 })
 ```
 
-
+End of notes for now,
 
 ---
 
