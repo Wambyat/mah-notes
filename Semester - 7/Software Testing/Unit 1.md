@@ -34,7 +34,7 @@ These are different software quality parameters:
 
 * Transferability
 
-<img title="" src="images/2023-09-29-19-23-41-image.png" alt="" data-align="center" width="859">
+<img title="" src="images/2023-09-29-19-23-41-image.png" alt="" data-align="center" width="438">
 
 ### Software quality-in-use model:
 
@@ -132,7 +132,7 @@ This is testing the entire system working. It is generally black box testing.It 
 
 #### UAT (User Acceptance Test):
 
-This is usually the last phase. It has 2 phases.
+This is usually the last phase. It has 2 phases. This is done by the customer before accepting the final product.
 
 ###### Alpha Testing: The customers come to the developers and do some testing
 
@@ -286,5 +286,38 @@ Test closure report signed by client.
 - Acceptance testing
 
 - Alpha and beta testing
+
+---
+
+### White Box Testing
+
+Also called structural testing. This tests code and infrastructure. Path loop and condition testing are white box tests. PyUnit, HTMLUnit, CppUnit, Parasoft Jtest EclEmma, NUnit are a few whitebox testing softwares.
+
+### Black Box Testing
+
+Also called behavioral testing. This tests the functionalities.
+
+- <u>Functional testing</u>: Tools like QTP, selenium
+
+- <u>Non - functional testing:</u> This is performance, scalability etc. Tools are LoadRunner, Jmeter.
+
+- <u>Regression testing:</u> This is checking if new code affects the old code. This is technically functional testing.
+
+---
+
+### Functional Testing
+
+This is testing against the requirements and specifications.
+
+### Non-Functional Testing
+
+This is performance, scalability,...testing.
+
+| Fucntional  | Non-functional |
+|:-----------:|:--------------:|
+| Unit        | Performance    |
+| Smoke       | Load           |
+| Integration | Stress         |
+| Regression  | Scalability    |
 
 ---
