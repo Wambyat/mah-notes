@@ -97,7 +97,7 @@ This is a way to see the maximum speedup paralellization can bring.
 
 ### Flynn's Taxonomy
 
-<img src="../../images/2023-10-08-22-56-18-image.png" title="" alt="" data-align="center">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
+<img title="" src="../../images/2023-10-08-22-56-18-image.png" alt="" data-align="center" width="393">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
 
 ### Interconnect
 
@@ -107,7 +107,7 @@ The connections can be made using buses. This can be in any form. Direct circuit
 
 Another way is crossbars. This mess below.
 
-<img src="../../images/2023-10-08-23-57-41-image.png" title="" alt="" data-align="center">
+<img title="" src="../../images/2023-10-08-23-57-41-image.png" alt="" data-align="center" width="401">
 
 Usually it is a mix of crossbar and bus. 
 
@@ -117,7 +117,7 @@ Usually it is a mix of crossbar and bus.
 
 One of the earliest supercomputers used a crossbar/ mesh. Torus connections is the donut shape(circle). Hypercube is 3D mesh. Some other network style is a tree. FAT tree is when higher nodes have higher number of wires or higher bandwidth. So root node has fat thangs. Butterfly is this nonsense.
 
-<img src="../../images/2023-10-09-00-12-06-image.png" title="" alt="" data-align="center">
+<img title="" src="../../images/2023-10-09-00-12-06-image.png" alt="" data-align="center" width="345">
 
 Essentially its a bit swap thing. First set is first bit swap and so on. So make groups and swap.
 
@@ -140,3 +140,77 @@ Essentially its a bit swap thing. First set is first bit swap and so on. So make
   <img src="../../images/2023-10-09-00-45-46-image.png" title="" alt="" data-align="center">
 
 Oh hey good architecture appeared! 
+
+---
+
+## OpenMP
+
+This is compiler supported, it is not a library, more like a model for compilers. We can give the compiler a heads up by typing `#pragma omp parallel <num of threads> {<code here>}`. If we don't specify number of threads then it will default to max supported by the cpu. Nesting threads are turned off by default but you can manually turn it on. Execution is done by making forks from the master code. the master code/thread then waits for all the threads to execute and then proceeds.
+
+Variables declared outside the threads are **shared**. We can set "global" variables to be private to a certain thread as well, essentially making a copy for the thread.  
+
+`Flush` is synchronizing values or data from thread specific memory to main memory.
+
+<img title="" src="../../images/2023-10-09-11-32-24-image.png" alt="" data-align="center" width="504">
+
+Here in thread 1 the compiler might assume that since b is not used in thread 1 it might move it to a later line.
+
+<img title="" src="../../images/2023-10-09-11-32-37-image.png" alt="" data-align="center" width="510">
+
+Flush ,assuming the compiler understands Flush, ensures that the compiler can't reorder.
+
+<img title="" src="../../images/2023-10-09-11-37-34-image.png" alt="" width="452" data-align="center">These are different parameters that we can define for the parallel code. `reduction` is how we should compile the results from the threads. We can add, subtract or other operations. Remember that threads != number of cores (includeing hyperthreading) We can often run a lot more threads than the number of cores (5x +). `firstprivate` gets the value of those variables from global scope(CHECK THIS). `copyin` confused the professor so I'm not gonna try checking it.
+
+```c
+#pragma omp parallel for
+for(i=o;i<N;++i)
+{
+//prallel code here
+}
+```
+
+This is also a valid way to writing. Here N is number of tasks not threads or cores. `nowait` makes it so that when a thread finishes execution, rather than waiting for the other threads to finish, it continues to the next task. 
+
+`schedule` is a way to assign the division of tasks. 3 options. 
+
+- static is 1st chunk to thread 1, 2nd to thread 2 .... 
+
+- dynamic lets us define chunk size. 
+
+- guided is dynamic but chunk size can also be dynamically changed for each thread. 
+
+### Section
+
+This is a way to write code that tells compiler to run some code o some thread/core. This is a bit of syntactical sugar.
+
+<img title="" src="../../images/2023-10-09-13-09-14-image.png" alt="" data-align="center" width="304">
+
+master is just saying only master thread will execute this part of the code.
+
+### Synchronization
+
+<img src="../../images/2023-10-09-13-12-01-image.png" title="" alt="" data-align="center">
+
+This is called critical section. This basically puts a lock on accessBankBalance. So only one thread can execute. accessBankBalance is a name for a region. We cannot nest critical sections inside a section of the same name <== check this. 
+
+**I DO NOT KNOW WTH ORDERED IS BESIDES NORMAL SEQUENTIAL CODING. PLS CHECK.**
+
+Flush is also considered a synchronization directive.
+
+Another simple synchronization directive is basic locking. It is called thru `opm_lock_t` type variable. 
+
+<br>
+
+Inside work-sharing, critical, ordered, master we should not have another
+
+- work-sharing section
+
+- barrier
+
+Inside work-sharing section we shouldn't have a:
+
+- master section
+
+Inside a critical region we shouldn't have a:
+
+- ordered region.
