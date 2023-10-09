@@ -1,6 +1,6 @@
 # Unit 1
 
-###### (lec 1 - 10)
+###### (lec 1 - 9)
 
 Parallel computing has arisen because of the hard limit of speeding up chips. 
 
@@ -161,6 +161,10 @@ Flush ,assuming the compiler understands Flush, ensures that the compiler can't 
 
 <img title="" src="../../images/2023-10-09-11-37-34-image.png" alt="" width="452" data-align="center">These are different parameters that we can define for the parallel code. `reduction` is how we should compile the results from the threads. We can add, subtract or other operations. Remember that threads != number of cores (includeing hyperthreading) We can often run a lot more threads than the number of cores (5x +). `firstprivate` gets the value of those variables from global scope(CHECK THIS). `copyin` confused the professor so I'm not gonna try checking it.
 
+![](../../images/2023-10-09-15-25-07-image.png)
+
+This is a wierd one. All the threads are essentially doing the same task. If ith thread evaluated to true(ie it finished) , then ALL threads from i to N-1 **will evaluate to true.** This is what lastprivate does.
+
 ```c
 #pragma omp parallel for
 for(i=o;i<N;++i)
@@ -193,7 +197,7 @@ master is just saying only master thread will execute this part of the code.
 
 This is called critical section. This basically puts a lock on accessBankBalance. So only one thread can execute. accessBankBalance is a name for a region. We cannot nest critical sections inside a section of the same name <== check this. 
 
-**I DO NOT KNOW WTH ORDERED IS BESIDES NORMAL SEQUENTIAL CODING. PLS CHECK.**
+**I DO NOT KNOW WTH ORDERED IS BESIDES NORMAL SEQUENTIAL CODING. IT JUST MAKES THE THREAD START ORDERED FIRST????? PLS CHECK.**
 
 Flush is also considered a synchronization directive.
 
@@ -214,3 +218,39 @@ Inside work-sharing section we shouldn't have a:
 Inside a critical region we shouldn't have a:
 
 - ordered region.
+
+### Example of parallel implementations:
+
+<img title="" src="../../images/2023-10-09-15-32-31-image.png" alt="" data-align="center" width="416">
+
+You can make it even further if you'd like.
+
+---
+
+## PRAM Model
+
+<img title="" src="../../images/2023-10-09-15-50-32-image.png" alt="" data-align="center" width="400">
+
+Parallel Random Access Machine (PRAM). It is a synchronous model. In each time unit every p can do one of:
+
+- read from a memory unit
+
+- perform a computation step
+
+- write to a memory unit
+
+Remember that co-access might be restricted. Each instruction generally takes O(1) time.
+
+<img title="" src="../../images/2023-10-09-16-01-41-image.png" alt="" data-align="center" width="505">
+
+Concurrent write has a few ways to resolve a clash. Priority, random or common(this is when all values are same).  
+
+<img src="../../images/2023-10-09-16-10-58-image.png" title="" alt="" data-align="center">
+
+Right can emulate left. 
+
+*Some things omitted from notes cuz it felt meaningless/ useless. check lec 9 if you wanna see ehat is left out.*
+
+Any problem solved on a p-processor PRAM in t steps, is solved on a p'-processor PRAM in $t' = O(\frac{t*p}{p'})$ steps assuming that the size of shared memory is same.
+
+Similarly the same if we change memory cells. 
