@@ -78,4 +78,12 @@ On the way to choose a model, we can run a basic model to understand where to pr
 
 We can improve our model by running the model over multiple hyperparameters and choosing the best. This is done thru gridsearchcv. For a large hyperparmaeter space we can used randomizedeearchcv. We can also drop features now.
 
+---
 
+## scikitlearn
+
+`.DESCR` gives lot of desc of the dataset. Za  most.
+
+---
+
+*Week 2*
