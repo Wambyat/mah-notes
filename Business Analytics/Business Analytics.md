@@ -31,3 +31,43 @@ Use annotations rather than a legend. Don't hesitate for a descriptive title.
 It is a visual display of the most important information needed to achieve one of more objectives that has been consolidated on a single screen so it can be monitored and understood at a glance. 
 
 A dashboard doe snot have to be "interactive". Its often better if it is not. 
+
+---
+
+*Week 2*
+
+Trace driven simulation is directly entering data.
+
+We can also "fit" it to another know distribution.
+
+Or make our own distribution (empirical distribution)
+
+Positive skew mean right tail is mode ie lower flat on RIGHT SIDE
+
+So after we choose a distribution we have to check **Goodness of fit.** We can do this through a few options:
+
+1. Frequency comparison (too complex so not notes or discussion)
+
+2. probability plots
+
+3. goodness of fit tests
+
+#### 2. Q-Q plot quantile-quantile plot
+
+#### 2. P-P plot probality-probability plot
+
+q-q highlights tails difference. p-p highlights middle.
+
+#### 3. chi-square test
+
+$$
+\chi^2 = \sum_{i=1}^{K} \frac{(O_i - E_i)^2}{E_i}\\
+O_i\ is\ observed\ value\\
+E_i\ is\ expected\ value
+$$
+
+Now we calc p from this can we see if it is less than $\alpha$ . If yes then reject. 
+
+Another way is $\chi_{tabulated}^{2} < \chi_{computed}^{2}$ no clue what these are.
+
+#### 3. kolmogorov smirnov test
