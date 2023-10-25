@@ -70,4 +70,38 @@ Now we calc p from this can we see if it is less than $\alpha$ . If yes then rej
 
 Another way is $\chi_{tabulated}^{2} < \chi_{computed}^{2}$ no clue what these are.
 
-#### 3. kolmogorov smirnov test
+#### 3. kolmogorov smirnov test the hell is this
+
+---
+
+*Week 3*
+
+If a categorical data can be in a NATURAL order then it is a ordinal data.
+
+$$
+Pr(A|M) = \frac{Pr(M \cap A)}{Pr(M)}
+$$
+
+This is Probability of M occurring IF A has occurred. 
+
+This is observed.
+
+| CITY  | A   | B   | C   | Total |
+| ----- | --- | --- | --- | ----- |
+| Mum   | 279 | 73  | 225 | 577   |
+| Cheni | 165 | 47  | 191 | 403   |
+| Total | 444 | 120 | 416 | 980   |
+
+$Expected = \frac{Row\ Total * Column\ Total}{TOTAL}$
+
+| CITY  | A     | B   | C   | Total |
+| ----- | ----- | --- | --- | ----- |
+| Mum   | 261.4 | ... | ... | 577   |
+| Cheni | 182.6 | ... | ... | 403   |
+| Total | 444   | 120 | 416 | 980   |
+
+This is for $\chi^2$ test. Larger this is, less independent the categories are.
+
+$degree\ of\ freedom = (row-1)*(column-1)$
+
+<img src="../images/2023-10-25-14-23-18-image.png" title="" alt="" data-align="center">
