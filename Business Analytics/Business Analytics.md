@@ -105,3 +105,19 @@ This is for $\chi^2$ test. Larger this is, less independent the categories are.
 $degree\ of\ freedom = (row-1)*(column-1)$
 
 <img src="../images/2023-10-25-14-23-18-image.png" title="" alt="" data-align="center">
+
+---
+
+*Week 4*
+
+Demand price curve. Price sensitivity has 2 ways to be measured. Slope (change in d/change in p) and elasticity (% change in d / % change in p)
+
+Elasticity is $\frac{(d(p_1)-d(p_2))/d(p_1)}{(p_2-p_1)/p_1}$ . PUT abs func EVERYWHERE cuz goddamn economists couldn't come up with a cleaner formula. Use logic to decide when to flip signs. Take "changed price" as first price.
+
+Market size is when price = 0. 
+
+Saciating price is P max ie demand is 0. For linear regress there is no point for some reason.
+
+***End for quiz 1***
+
+---
