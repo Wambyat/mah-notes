@@ -4,7 +4,7 @@ There is a few things to remember when we make a visualization.
 
 - Known Purpose: We should know **why** each object is present in the visualization.
 
-- Ensure integrity: Do not represent data in a way that does not distort the truth. 
+- Ensure integrity: Do not represent data in a way that distorts the truth. 
 
 - Maximize data ink and minimize non data ink: Make sure that the data is as well and as much represented as possible. Try to not waste ink on things that are not data.
 
