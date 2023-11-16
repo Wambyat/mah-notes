@@ -90,8 +90,6 @@ Bidirectional is the best and worst of both.
 
 Scenario testing is where we make stories and test in those scenarios. Usually mimicking a end user's experience. We use a traceability matrix here.
 
-
-
 System integration is -_- 
 
 ---
