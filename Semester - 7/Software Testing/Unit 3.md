@@ -59,3 +59,105 @@ In gray box we take inputs valid for black box testing or white box testing. We 
 - Orthogonal Array Testing: No info provided.
 
 - Pattern Testing: This is testing done on historical system defects and tries to understand the root cause of the defect.
+
+---
+
+## Test Management
+
+A lot of this is repeat of Unit 1 and 2. 
+
+We have to:
+
+1. Set up criteria for testing
+
+2. Identify Skill sets and training
+
+3. Identify environment needs
+
+4. Identify test deliverables
+
+5. Test Estimation(size, effort resources, time)
+
+6. Dependencies
+   
+   - External:
+     
+     - Product developers
+     
+     - Documents
+     
+     - Hiring resources
+     
+     - Training resources
+     
+     - Hardware availability
+     
+     - etc
+   
+   - Internal:
+     
+     - Test specifications
+     
+     - Code/Scripting tests
+     
+     - Execution of tests
+     
+     - Conflicts with enc etc
+
+7- Manage risks taken
+
+### Test Process:
+
+<img src="../../images/2023-11-19-13-01-56-image.png" title="" alt="" data-align="center">
+
+<img src="../../images/2023-11-19-13-02-08-image.png" title="" alt="" data-align="center">
+
+### Test Reporting
+
+Test Incidence report, Test cycle report, Test summary report
+
+---
+
+## Defect Management Process (DMP)
+
+Life cycle of a defect:
+
+1. Discovery
+
+2. Category
+
+3. Resolution
+
+4. Verification
+
+5. Closure
+
+6. Report
+
+A defect is a problem or error in the code. DMP is used to:
+
+- Prevent and detect defects
+
+- Resolve and mitigate defect impact
+
+- Improve software development process
+
+### Stages of DMP:
+
+1. **Defect prevention:** This is basically best practices and all that sort.
+
+2. **Deliverable baseline:** This is regular baseline stuff. 
+
+3. **Defect Discovery:** Identify=>Report=>Acknowledge.
+
+4. **Defect Resolution:** Prioritize=>Fix=>Report
+
+5. **Process Improvement:** This is looking into lower priority defects.
+
+6. **Management Report:** Evaluation and reports all defects.
+
+---
+
+## Acceptance Testing
+
+This is testing done with customer criteria in mind. Alpha and beta testing generally come here.
