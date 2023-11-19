@@ -1,2 +1,2 @@
 # Notes
-These are just some note i made while studying for finals
+These are notes I've made for my univeraity
