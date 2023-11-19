@@ -28,6 +28,10 @@ We do black box testing ,in general, to improve the user experience, rather than
   
   - Negative testing ensure that the invalid data is not accepted and dealt with in a matter such that the program does not crash.
 
+<br/>
+
+<br/>
+
 - **Specification based**
   
   - Equivalence partitioning: This divides the input data into multiple equal parts from which test cases can be derived. All inputs in one part must exhibit similar or same behavior to each other. This is essentially creating "classes" of inputs.
@@ -106,11 +110,13 @@ We have to:
 
 7- Manage risks taken
 
+<br/>
+
 ### Test Process:
 
-<img src="../../images/2023-11-19-13-01-56-image.png" title="" alt="" data-align="center">
+<img title="" src="../../images/2023-11-19-13-01-56-image.png" alt="" data-align="center" width="617">
 
-<img src="../../images/2023-11-19-13-02-08-image.png" title="" alt="" data-align="center">
+<img title="" src="../../images/2023-11-19-13-02-08-image.png" alt="" data-align="center" width="622">
 
 ### Test Reporting
 
@@ -161,3 +167,5 @@ A defect is a problem or error in the code. DMP is used to:
 ## Acceptance Testing
 
 This is testing done with customer criteria in mind. Alpha and beta testing generally come here.
+
+---
