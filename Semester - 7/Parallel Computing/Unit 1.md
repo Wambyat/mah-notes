@@ -147,7 +147,7 @@ Oh hey good architecture appeared!
 
 This is compiler supported, it is not a library, more like a model for compilers. We can give the compiler a heads up by typing `#pragma omp parallel <num of threads> {<code here>}`. If we don't specify number of threads then it will default to max supported by the cpu. Nesting threads are turned off by default but you can manually turn it on. Execution is done by making forks from the master code. the master code/thread then waits for all the threads to execute and then proceeds.
 
-Variables declared outside the threads are **shared**. We can set "global" variables to be private to a certain thread as well, essentially making a copy for the thread.  
+Variables declared outside the threads are **shared**. We can set "global" variables to be private to a certain thread as well, essentially making a copy for the thread.
 
 `Flush` is synchronizing values or data from thread specific memory to main memory.
 
@@ -253,4 +253,4 @@ Right can emulate left.
 
 Any problem solved on a p-processor PRAM in t steps, is solved on a p'-processor PRAM in $t' = O(\frac{t*p}{p'})$ steps assuming that the size of shared memory is same.
 
-Similarly the same if we change memory cells. 
+Similarly the same if we change memory cells.

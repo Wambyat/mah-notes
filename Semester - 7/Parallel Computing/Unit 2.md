@@ -83,3 +83,9 @@ Consistency is only enforced on request. OpenMP uses this.
   - give continuous blocks💀. These blocks have the variables. In this we send lines of memory. So we get some useless stuff. 
 
 There are other things like make code short, use as many threads as required etc.
+
+---
+
+## Message Passing Interface (MPI):
+
+This is just what the heading is. No magic nonsence. Also the low level implementation is left out.
