@@ -123,7 +123,7 @@ Essentially its a bit swap thing. First set is first bit swap and so on. So make
 
 - Cray is an old processor manufacturer. It was 80MHz and \$9 million. 0_0. Nowadays 3GHz is available for \$300
 
-- CM-2, 5 ...this was a harward group. They push SIMD. 
+- CM-2, 5 ...this was a Harvard group. They push SIMD. 
 
 - NCube was a hypercube processor.
 
@@ -131,7 +131,7 @@ Essentially its a bit swap thing. First set is first bit swap and so on. So make
 
 - Roadrunner was the 2008's best supercomputer? Its in petaflops now. (not petaHz). This was one of the last non cluster type. This is using a cell processor (from ibm). This is the piece of shit that the ps3 uses.
 
-- ![](../../images/2023-10-09-00-40-54-image.png)
+- <img src="../../images/2023-10-09-00-40-54-image.png" title="" alt="" data-align="center">
   
   WTH is this? A crap architecture that didn't catch on. IBM can suck it.
 
@@ -145,7 +145,7 @@ Oh hey good architecture appeared!
 
 ## OpenMP
 
-This is compiler supported, it is not a library, more like a model for compilers. We can give the compiler a heads up by typing `#pragma omp parallel <num of threads> {<code here>}`. If we don't specify number of threads then it will default to max supported by the cpu. Nesting threads are turned off by default but you can manually turn it on. Execution is done by making forks from the master code. the master code/thread then waits for all the threads to execute and then proceeds.
+This is compiler supported, it is not a library, more like a model for compilers. We can give the compiler a heads up by typing `#pragma omp parallel <num of threads> {<code here>}`. If we don't specify number of threads then it will default to max supported by the CPU. Nesting threads are turned off by default but you can manually turn it on. Execution is done by making forks from the master code. the master code/thread then waits for all the threads to execute and then proceeds.
 
 Variables declared outside the threads are **shared**. We can set "global" variables to be private to a certain thread as well, essentially making a copy for the thread.
 
