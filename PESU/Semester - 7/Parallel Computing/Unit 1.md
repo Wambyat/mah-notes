@@ -97,7 +97,7 @@ This is a way to see the maximum speedup paralellization can bring.
 
 ### Flynn's Taxonomy
 
-<img title="" src="../../images/2023-10-08-22-56-18-image.png" alt="" data-align="center" width="393">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
+<img title="" src="images/2023-10-08-22-56-18-image.png" alt="" data-align="center" width="393">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
 
 ### Interconnect
 
