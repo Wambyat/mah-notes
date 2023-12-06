@@ -14,7 +14,7 @@ A smart contract is a piece of software that stores rules for negotiating the te
 
 Advantages of a smart contract
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-21-22-33-image.png)
+![](../../../\images\2023-05-18-21-22-33-image.png)
 
 Deploying the contract is technically a transaction. So anyone can do it given they pay.
 
@@ -28,7 +28,7 @@ Contracts cannot perform https requests. Outside information could be dangerous 
 
 A decentralized application (dApp) is a type of distributed open source software application that runs on a peer-to-peer (P2P) blockchain network rather than on a single computer.
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-23-22-25-image.png)
+![](../../../\images\2023-05-18-23-22-25-image.png)
 
 Advantages of dApp
 

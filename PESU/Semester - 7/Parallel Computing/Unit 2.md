@@ -20,7 +20,7 @@ This says that there are virtual pairs of processor and memory. There is not loc
 
 - barrier synchronization
 
-<img src="../../images/2023-10-09-17-54-49-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-10-09-17-54-49-image.png" title="" alt="" data-align="center">
 
 BSP has system wide steps, like pram. It is simple to analyze. It connects well to physical architecture. 
 
@@ -70,7 +70,7 @@ All processes must see memory writes from one process in the order they were iss
 
 Consistency is only enforced on request. OpenMP uses this.
 
-<img src="../../images/2023-10-09-23-36-50-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-10-09-23-36-50-image.png" title="" alt="" data-align="center">
 
 ## Performance issues
 
@@ -132,15 +132,15 @@ There are also a few different types of "collective" or group communications.
 
 7. MPI_Scan: Not what it seems. Get all values before you, process it and do something ig. Kinda wierd tbh. Google for clarity or more pain.
 
-<img src="../../images/2023-12-02-22-47-29-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-12-02-22-47-29-image.png" title="" alt="" data-align="center">
 
-<img src="../../images/2023-12-02-22-47-57-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-12-02-22-47-57-image.png" title="" alt="" data-align="center">
 
-<img src="../../images/2023-12-02-23-06-00-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-12-02-23-06-00-image.png" title="" alt="" data-align="center">
 
 We can "spawn" threads with `MPI_Comm_Spawn`. Window is like a chuck of memory I suppose. Use `MPI_Put` and `MPI_Get` to work with it. There are so many other ones man. 
 
-<img title="" src="../../images/2023-12-02-23-11-01-image.png" alt="" data-align="center" width="489">
+<img title="" src="../../../images/2023-12-02-23-11-01-image.png" alt="" data-align="center" width="489">
 
 ---
 
@@ -150,13 +150,13 @@ We can "spawn" threads with `MPI_Comm_Spawn`. Window is like a chuck of memory I
 
 We build a binary tree on the input, thereby dividing into hierarchical groups. Travel the tree.
 
-The numbers are the processor numbers. This is reduction.<img title="" src="../../images/2023-12-02-23-54-51-image.png" alt="" data-align="inline" width="483"><img title="" src="../../images/2023-12-02-23-57-28-image.png" alt="" width="366">
+The numbers are the processor numbers. This is reduction.<img title="" src="../../../images/2023-12-02-23-54-51-image.png" alt="" data-align="inline" width="483"><img title="" src="../../../images/2023-12-02-23-57-28-image.png" alt="" width="366">
 
 Each processor is dependent on itself in a binomial tree manner.
 
 Prefix sum is sum of everything before it. $x_{n} = \sum_{0}^{n}{x_i}$. Below is prefix sum. $S(m:n]$ means sum of mth element to n-1th element.
 
-<img src="../../images/2023-12-03-00-02-22-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-12-03-00-02-22-image.png" title="" alt="" data-align="center">
 
 ---
 
@@ -168,7 +168,7 @@ Optimal merge sort has gone over my head. Here are some key words. Split the mai
 
 Convex hull is parallelized by "splitting" the set of points. We make basic hulls for both sets of points and combine. 
 
-<img title="" src="../../images/2023-12-03-22-06-41-image.png" alt="" data-align="center" width="260">
+<img title="" src="../../../images/2023-12-03-22-06-41-image.png" alt="" data-align="center" width="260">
 
 ---
 

@@ -193,11 +193,11 @@ This is the older consensus algorithm.
 
 Here we make a timeline for proposals. The largest number is considered the latest.
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-19-17-image.png)
+![](../../../\images\2023-05-18-13-19-17-image.png)
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-19-45-image.png)
+![](../../../\images\2023-05-18-13-19-45-image.png)
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-13-22-27-image.png)
+![](../../../\images\2023-05-18-13-22-27-image.png)
 
 Here before 11 could be proposed the accept for 10 was already sent. So 10 is chosen.
 
@@ -237,7 +237,7 @@ If we receive more than m+1 same replies then choose that.
 
 
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-18-20-18-32-image.png)
+![](../../../\images\2023-05-18-20-18-32-image.png)
 
 Bad scaling and only one thing controls all.
 

@@ -166,7 +166,7 @@ Here are a few currencies
 
 Token is a digital asset. Programmable assets or access rights. It is used for Decentralised Applications and Autonomous Organisations. This is managed by a smart contract.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-19-51-34-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-19-51-34-image.png" title="" alt="" data-align="center">
 
 ##### Types of tokens
 
@@ -210,6 +210,6 @@ Usual. Private do shit. Public verify.
 
 This is also called federated. This is the organization one.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-20-28-47-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-20-28-47-image.png" title="" alt="" data-align="center">
 
 

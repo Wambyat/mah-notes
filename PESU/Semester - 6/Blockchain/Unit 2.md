@@ -24,19 +24,19 @@ Common problem is scaling. We need nC2 keys for n participants.
 
 + Transposition Cipher
   
-  <img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-21-59-25-image.png" alt="" data-align="center">
+  <img title="" src="../../../images/2023-05-17-21-59-25-image.png" alt="" data-align="center">
 
 + Substitution Cipher
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-21-59-47-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-21-59-47-image.png" title="" alt="" data-align="center">
 
 + Stream Ciphers
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-22-00-06-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-22-00-06-image.png" title="" alt="" data-align="center">
 
 + Block Cipher
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-22-00-18-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-22-00-18-image.png" title="" alt="" data-align="center">
 
 ###### DES
 
@@ -48,7 +48,7 @@ This is the private and public keys.
 
 ###### RSA
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-22-11-44-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-22-11-44-image.png" title="" alt="" data-align="center">
 
 ###### Diffie Hellman
 
@@ -86,10 +86,10 @@ Advantages of using a smart contract
 
 A smart contract is made out of
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-23-43-14-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-23-43-14-image.png" title="" alt="" data-align="center">
 
 This is a contract written in solidity
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-17-23-45-27-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-17-23-45-27-image.png" title="" alt="" data-align="center">
 
 This notes is small cuz unit 2 is stupid stuff lol

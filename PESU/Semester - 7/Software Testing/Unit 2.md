@@ -12,7 +12,7 @@ While unit testing is very powerful it cannot catch all errors and cannot evalua
 
 This is where we design and create tests for each application function and developers only writes new code when the automated test cases fail. This promotes reusing and minimizing code, while prioritizing requirements. It also allows easier documentation.
 
-<img src="../../images/2023-10-03-13-45-07-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-10-03-13-45-07-image.png" title="" alt="" data-align="center">
 
 ---
 
@@ -24,7 +24,7 @@ This is the process of changing a software system without altering external beha
 
 ## White Box Testing
 
-<img title="" src="../../images/2023-10-03-19-53-36-image.png" alt="" data-align="center" width="661">
+<img title="" src="../../../images/2023-10-03-19-53-36-image.png" alt="" data-align="center" width="661">
 
 Static Testing is only done on the code and not on the executable.
 

@@ -24,7 +24,7 @@
 
 + This represents the "is-a" relationship.
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-10-22-50-55-image.png)
+![](../../../\images\2023-05-10-22-50-55-image.png)
 
 ---
 

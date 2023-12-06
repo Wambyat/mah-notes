@@ -139,7 +139,7 @@ This is used to store information about the tests. All possible metadata, when h
 
 This is an open source bug tracking software, known for its robust search features.
 
-![](../../images/d98f8de85e8a4ab41abfa4ebc4b13a7a7008367e.png)
+![](../../../images/d98f8de85e8a4ab41abfa4ebc4b13a7a7008367e.png)
 
 | Advantages                                            | Disadvantages                     |
 | ----------------------------------------------------- | --------------------------------- |

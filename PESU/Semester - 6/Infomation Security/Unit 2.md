@@ -10,7 +10,7 @@ Stack smashing and heap smashing ie overflow/ overrrun.
 
 In c \0 represents the end of string. if we ovewrite this then itll be like the string never ends. \0 is called NUL or NIL NOT NULL.
 
-<img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-22-16-30-14-image.png" alt="" data-align="center" width="928">
+<img title="" src="../../../images/2023-05-22-16-30-14-image.png" alt="" data-align="center" width="928">
 
 Stack pointer points to the top of the actual stack. This is changed during push/ pop.
 
@@ -20,7 +20,7 @@ All local made variables are in stack. Including the parameters and the malloc o
 
 Uninitialized static vars go to BSS. Global vars in data segment.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-22-16-37-24-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-22-16-37-24-image.png" title="" alt="" data-align="center">
 
 This is stack frame. top ig is stack pointer.
 
@@ -44,11 +44,11 @@ libc is a common lib that a lot of progs use. We will exploit the system() func 
 
 We need a env var that has "bin/sh/" so that we can pass that into the system() func. We will place this var's addr and the return addr into the stack.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-22-17-52-17-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-22-17-52-17-image.png" title="" alt="" data-align="center">
 
 this will be the badfile
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-22-17-55-51-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-22-17-55-51-image.png" title="" alt="" data-align="center">
 
 ---
 

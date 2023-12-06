@@ -2,7 +2,7 @@
 
 ## Malware
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-22-18-52-23-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-05-22-18-52-23-image.png" title="" alt="" data-align="center">
 
 Attack kit is a toolbox.
 

@@ -18,11 +18,11 @@ When we decide to visualize data we should:
 
 3. How do I design it so that it is easy to understand the purpose and data?
 
-<img src="../images/2023-10-14-10-38-34-image.png" title="" alt="" data-align="center">
+<img src="../../images/2023-10-14-10-38-34-image.png" title="" alt="" data-align="center">
 
 Which graph do we use?
 
-<img src="../images/2023-10-14-10-44-25-image.png" title="" alt="" data-align="center">
+<img src="../../images/2023-10-14-10-44-25-image.png" title="" alt="" data-align="center">
 
 Use annotations rather than a legend. Don't hesitate for a descriptive title.
 
@@ -104,7 +104,7 @@ This is for $\chi^2$ test. Larger this is, less independent the categories are.
 
 $degree\ of\ freedom = (row-1)*(column-1)$
 
-<img src="../images/2023-10-25-14-23-18-image.png" title="" alt="" data-align="center">
+<img src="../../images/2023-10-25-14-23-18-image.png" title="" alt="" data-align="center">
 
 ---
 

@@ -48,7 +48,7 @@ Every process has 2 IDs. Real UID and effective UID. Access control is based on 
 
 During regular execution RUID = EUID. During privileged run we change EUID.
 
-![](C:\Users\Anirudha\AppData\Roaming\marktext\images\2023-05-21-22-23-30-image.png)
+![](../../../\images\2023-05-21-22-23-30-image.png)
 
 ---
 

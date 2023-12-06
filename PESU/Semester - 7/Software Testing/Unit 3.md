@@ -114,9 +114,9 @@ We have to:
 
 ### Test Process:
 
-<img title="" src="../../images/2023-11-19-13-01-56-image.png" alt="" data-align="center" width="617">
+<img title="" src="../../../images/2023-11-19-13-01-56-image.png" alt="" data-align="center" width="617">
 
-<img title="" src="../../images/2023-11-19-13-02-08-image.png" alt="" data-align="center" width="622">
+<img title="" src="../../../images/2023-11-19-13-02-08-image.png" alt="" data-align="center" width="622">
 
 ### Test Reporting
 

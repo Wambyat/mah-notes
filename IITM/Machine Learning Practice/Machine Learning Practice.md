@@ -64,11 +64,11 @@ Scaling is -_-. Min-max or normalization. Standardization is when we subtract me
 
 Pipeline is when w line up a set of transformations in an intended order. 
 
-![](images/2023-10-18-11-58-12-image.png)
+<img src="../../images/2023-10-18-11-58-12-image.png" title="" alt="" data-align="center">
 
 This can be enhanced to use categorical features as well.
 
-![](images/2023-10-18-12-00-43-image.png)
+<img src="../../images/2023-10-18-12-00-43-image.png" title="" alt="" data-align="center">
 
 ## Select and train model
 

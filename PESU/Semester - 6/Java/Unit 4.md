@@ -2,7 +2,7 @@
 
 ## Design Patterns:
 
-<img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-13-22-59-image.png" alt="" data-align="center">
+<img title="" src="../../..//images/2023-05-11-13-22-59-image.png" alt="" data-align="center">
 
 ## Creational Patterns:
 
@@ -24,9 +24,9 @@
 
 This is eager initialization.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-13-28-19-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-13-28-19-image.png" title="" alt="" data-align="center">
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-13-28-27-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-13-28-27-image.png" title="" alt="" data-align="center">
 
 This is a more proper example. Lazy initialization.
 
@@ -111,9 +111,9 @@ This has a few issues:
 
 + Subclasses override the creation method.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-14-08-30-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-14-08-30-image.png" title="" alt="" data-align="center">
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-14-08-51-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-14-08-51-image.png" title="" alt="" data-align="center">
 
 Here we can send the shape name to ShapeFactroy and it will return the appropriate Shape based object.
 
@@ -153,11 +153,11 @@ Cons:
 
 One stupid implementation is an open ended conversion. Lets say that we are trying convert from one text format to another. A class called DocxToPdf will be converting a Docx object to pdf object.
 
-<img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-14-47-image.png" alt="" data-align="center">
+<img title="" src="../../..//images/2023-05-11-08-14-47-image.png" alt="" data-align="center">
 
 Let's see an implementation.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-07-49-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-08-07-49-image.png" title="" alt="" data-align="center">
 
 To be more accurate there will be more implementations of BurgerBuilder like HamBurgerBuilder or CornCheeseBuilder etc.
 
@@ -177,7 +177,7 @@ The director type implementation will also have **polymorphism**.
 
 + Harder to make more complex objects.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-39-24-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-08-39-24-image.png" title="" alt="" data-align="center">
 
 We can have a prototype registry which is kinda like a factory.
 
@@ -193,7 +193,7 @@ We can have a prototype registry which is kinda like a factory.
 
 + This is sometimes considered like a wrapper.
 
-<img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-08-58-53-image.png" alt="" data-align="center">
+<img title="" src="../../..//images/2023-05-11-08-58-53-image.png" alt="" data-align="center">
 
 The MP4 ,VLC problem.
 
@@ -201,7 +201,7 @@ Adaptee is the class getting converted. This is "controversial".
 
 ##### Object Adaptor vs Class Adaptor
 
-<img title="" src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-09-08-36-image.png" alt="" width="863" data-align="center">
+<img title="" src="../../..//images/2023-05-11-09-08-36-image.png" alt="" width="863" data-align="center">
 
 ---
 
@@ -215,9 +215,9 @@ Adaptee is the class getting converted. This is "controversial".
 
 + It decouples the subsystems from the clients. It can sometimes remove circular dependencies.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-10-31-42-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-10-31-42-image.png" title="" alt="" data-align="center">
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-10-33-30-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-10-33-30-image.png" title="" alt="" data-align="center">
 
 ---
 
@@ -237,7 +237,7 @@ Adaptee is the class getting converted. This is "controversial".
 
 + It follows open/closed principle
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-12-22-28-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-12-22-28-image.png" title="" alt="" data-align="center">
 
 One way to look at this is that proxy image will be shown until the real image gets loaded.
 
@@ -255,7 +255,7 @@ One way to look at this is that proxy image will be shown until the real image g
 
 + Extrinsic state calculations can sometimes be very taxing.
 
-<img src="file:///C:/Users/Anirudha/AppData/Roaming/marktext/images/2023-05-11-13-00-35-image.png" title="" alt="" data-align="center">
+<img src="../../..//images/2023-05-11-13-00-35-image.png" title="" alt="" data-align="center">
 
 A document editing software.
 

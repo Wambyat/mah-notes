@@ -97,7 +97,7 @@ This is a way to see the maximum speedup paralellization can bring.
 
 ### Flynn's Taxonomy
 
-<img title="" src="../../images/2023-10-08-22-56-18-image.png" alt="" data-align="center" width="393">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
+<img title="" src="../../../images/2023-10-08-22-56-18-image.png" alt="" data-align="center" width="393">This is a basic way to categorize parallel architectures. MISD (Multiple Instruction Single Data) is kinda "hidden" and not very common. SIMD is pipeline (i think). SIMD is cheaper and more power efficient and smaller. SIMD should preferably be condition free.
 
 ### Interconnect
 
@@ -107,7 +107,7 @@ The connections can be made using buses. This can be in any form. Direct circuit
 
 Another way is crossbars. This mess below.
 
-<img title="" src="../../images/2023-10-08-23-57-41-image.png" alt="" data-align="center" width="401">
+<img title="" src="../../../images/2023-10-08-23-57-41-image.png" alt="" data-align="center" width="401">
 
 Usually it is a mix of crossbar and bus. 
 
@@ -117,7 +117,7 @@ Usually it is a mix of crossbar and bus.
 
 One of the earliest supercomputers used a crossbar/ mesh. Torus connections is the donut shape(circle). Hypercube is 3D mesh. Some other network style is a tree. FAT tree is when higher nodes have higher number of wires or higher bandwidth. So root node has fat thangs. Butterfly is this nonsense.
 
-<img title="" src="../../images/2023-10-09-00-12-06-image.png" alt="" data-align="center" width="345">
+<img title="" src="../../../images/2023-10-09-00-12-06-image.png" alt="" data-align="center" width="345">
 
 Essentially its a bit swap thing. First set is first bit swap and so on. So make groups and swap.
 
@@ -131,13 +131,13 @@ Essentially its a bit swap thing. First set is first bit swap and so on. So make
 
 - Roadrunner was the 2008's best supercomputer? Its in petaflops now. (not petaHz). This was one of the last non cluster type. This is using a cell processor (from ibm). This is the piece of shit that the ps3 uses.
 
-- <img src="../../images/2023-10-09-00-40-54-image.png" title="" alt="" data-align="center">
+- <img src="../../../images/2023-10-09-00-40-54-image.png" title="" alt="" data-align="center">
   
   WTH is this? A crap architecture that didn't catch on. IBM can suck it.
 
 - Nvidia made a GPU called Tesla in 2000 something 2008 i guess. These are REALLY OLD NOW (2023). Fermi came out in 2010.
   
-  <img src="../../images/2023-10-09-00-45-46-image.png" title="" alt="" data-align="center">
+  <img src="../../../images/2023-10-09-00-45-46-image.png" title="" alt="" data-align="center">
 
 Oh hey good architecture appeared! 
 
@@ -151,15 +151,15 @@ Variables declared outside the threads are **shared**. We can set "global" varia
 
 `Flush` is synchronizing values or data from thread specific memory to main memory.
 
-<img title="" src="../../images/2023-10-09-11-32-24-image.png" alt="" data-align="center" width="504">
+<img title="" src="../../../images/2023-10-09-11-32-24-image.png" alt="" data-align="center" width="504">
 
 Here in thread 1 the compiler might assume that since b is not used in thread 1 it might move it to a later line.
 
-<img title="" src="../../images/2023-10-09-11-32-37-image.png" alt="" data-align="center" width="510">
+<img title="" src="../../../images/2023-10-09-11-32-37-image.png" alt="" data-align="center" width="510">
 
 Flush ,assuming the compiler understands Flush, ensures that the compiler can't reorder.
 
-<img title="" src="../../images/2023-10-09-11-37-34-image.png" alt="" width="452" data-align="center">These are different parameters that we can define for the parallel code. `reduction` is how we should compile the results from the threads. We can add, subtract or other operations. Remember that threads != number of cores (includeing hyperthreading) We can often run a lot more threads than the number of cores (5x +). `firstprivate` gets the value of those variables from global scope(CHECK THIS). `copyin` confused the professor so I'm not gonna try checking it.
+<img title="" src="../../../images/2023-10-09-11-37-34-image.png" alt="" width="452" data-align="center">These are different parameters that we can define for the parallel code. `reduction` is how we should compile the results from the threads. We can add, subtract or other operations. Remember that threads != number of cores (includeing hyperthreading) We can often run a lot more threads than the number of cores (5x +). `firstprivate` gets the value of those variables from global scope(CHECK THIS). `copyin` confused the professor so I'm not gonna try checking it.
 
 ![](../../images/2023-10-09-15-25-07-image.png)
 
@@ -187,13 +187,13 @@ This is also a valid way to writing. Here N is number of tasks not threads or co
 
 This is a way to write code that tells compiler to run some code o some thread/core. This is a bit of syntactical sugar.
 
-<img title="" src="../../images/2023-10-09-13-09-14-image.png" alt="" data-align="center" width="304">
+<img title="" src="../../../images/2023-10-09-13-09-14-image.png" alt="" data-align="center" width="304">
 
 master is just saying only master thread will execute this part of the code.
 
 ### Synchronization
 
-<img src="../../images/2023-10-09-13-12-01-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-10-09-13-12-01-image.png" title="" alt="" data-align="center">
 
 This is called critical section. This basically puts a lock on accessBankBalance. So only one thread can execute. accessBankBalance is a name for a region. We cannot nest critical sections inside a section of the same name <== check this. 
 
@@ -221,7 +221,7 @@ Inside a critical region we shouldn't have a:
 
 ### Example of parallel implementations:
 
-<img title="" src="../../images/2023-10-09-15-32-31-image.png" alt="" data-align="center" width="416">
+<img title="" src="../../../images/2023-10-09-15-32-31-image.png" alt="" data-align="center" width="416">
 
 You can make it even further if you'd like.
 
@@ -229,7 +229,7 @@ You can make it even further if you'd like.
 
 ## PRAM Model
 
-<img title="" src="../../images/2023-10-09-15-50-32-image.png" alt="" data-align="center" width="400">
+<img title="" src="../../../images/2023-10-09-15-50-32-image.png" alt="" data-align="center" width="400">
 
 Parallel Random Access Machine (PRAM). It is a synchronous model. In each time unit every p can do one of:
 
@@ -241,11 +241,11 @@ Parallel Random Access Machine (PRAM). It is a synchronous model. In each time u
 
 Remember that co-access might be restricted. Each instruction generally takes O(1) time.
 
-<img title="" src="../../images/2023-10-09-16-01-41-image.png" alt="" data-align="center" width="505">
+<img title="" src="../../../images/2023-10-09-16-01-41-image.png" alt="" data-align="center" width="505">
 
 Concurrent write has a few ways to resolve a clash. Priority, random or common(this is when all values are same).  
 
-<img src="../../images/2023-10-09-16-10-58-image.png" title="" alt="" data-align="center">
+<img src="../../../images/2023-10-09-16-10-58-image.png" title="" alt="" data-align="center">
 
 Right can emulate left. 
 
