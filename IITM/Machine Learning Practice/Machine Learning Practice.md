@@ -87,3 +87,18 @@ We can improve our model by running the model over multiple hyperparameters and 
 ---
 
 *Week 2*
+
+- One vs. All:- **N-class instances** then **N binary classifier models.** This is where it is Red vs [Blue,Green] ...
+- One vs. One:- **N-class instances** then **N* (N-1)/2 binary classifier models.** This is where it is Red vs Blue, Red vs Green ...
+
+`DummyClissifer` looks at `y` values sent to `fit()`.
+
+Things to check:
+
+1. Polynomial Features
+
+2. CountVectorizer
+
+3. MaxAbsScaler
+
+4. 
