@@ -1,0 +1,77 @@
+Eligibility to write the final exam: Average of best 5 of the first 9 weeks' graded assignments; >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end-term exam
+
+The calculation of the final course score for eligible students is as follows:
+
+GAA = Average of best 10 of the 11 weeks' graded assignments
+
+GP = score in Group Project (0, if not participated)
+
+Qz2 = score in Quiz II (0, if not attempted), based on weeks 1-7 (Subjective & Objective)
+
+F = score in final exam, based on weeks 1-12 (Subjective & Objective)
+
+T = Total score (out of 100)
+
+T =  0.15*GAA + 0.25*GP + 0.25*Qz2 + 0.35*F
+
+---
+
+Assignment Guidelines (****Term - January 2024****)
+
+LAST UPDATED: 18-JAN-2024
+
+### I. Types of assignments in the SPG course
+
+**1. Discourse-based Assignments:**
+
+Case Study-based: A case will be posted. Using your learning from the course content, internet resources, or professional experience, you have to answer the questions.
+
+Self-reflection: A question and instructions will be posted. Based on the survey, course content, internet resources, or self-experience and professional experience, you have to answer the questions.
+
+Discussion Question: You will be asked a general question based on the course content, internet resources, or personal and professional experience.
+
+**2. Multiple Choice Questions:**
+
+Mostly non-graded in nature. If graded, it will be clearly mentioned in the course portal. Please pay attention to the same.
+
+**3. Video Presentation Assignments - Individual or Group:**
+
+Individual: An article, case, movie/TED talk, newspaper article, or real-life (business/ personal development) scenario will be given. Your task would be to present in front of your peers, record, and upload the same.
+
+Group: An article, case, movie/TED talk, newspaper article, or real-life (business/personal development) scenario will be given. Your team's task would be to present in front of your peers, record, and upload the same.
+
+**4. Essay Writing Assignment:**
+
+A self-reflection activity, survey, or case study will be given. Your task is to read/analyze/complete it and write a short essay on the same topic. Instructions will be given in the course portal.
+
+### II. Guidelines
+
+1. Your posts and replies to others' posts must be thoughtful or provide (at least one or two) citations to back your perspective. The citations do not have to be academic sources but need to be credible ones such as respected newspapers, magazines, or websites.
+
+2. You will be required to add links to your discourse post/ video links to the sheet. Please do the same with utmost care and before the deadline. Please refrain from removing or modifying any existing information, including email addresses, names, team details, or topics or links added. The edit history of this sheet will be visible to all learners and the course team.
+
+3. Your latest submission will be taken into consideration for grading. Learners must be assured that their content, submissions, documents, answers, and presentations will be used only within the course/the IIT Madras BS Degree program.
+
+4. Please submit original, relevant work for your assignments. Avoid inflammatory language, false information, and copying from the internet or other students, and ensure all sources are properly cited. It is important to demonstrate integrity in your work.
+
+5. Discourse-based/ Essay Assignments may or may not require you to respond to peers' posts. It depends on the nature of the questions, the deadline to submit assignments, and the weightage for the same. Please read the instructions given on the course portal for each assignment carefully.
+
+6. While posting your answer on discourse, kindly include your name and roll number at the end of your discourse post.
+
+E.g.,
+
+Blah blah...more blahing…
+
+Blaher
+
+27f1001234
+
+7. For video assignments, you are required to present in front of peers and obtain feedback. Ensure that the presentation and feedback session are recorded, maintaining a high standard of decorum and civility throughout the process. Importantly, when providing feedback, it is advised to refrain from commenting on personal attributes. The focus should solely be on constructive critiques related to the presentation's structure, slides and delivery of the content.
+
+8. Failing to adhere to will be dealt with as per Academic and non-academic misconduct rules of IITM BS. See [link](https://docs.google.com/document/d/e/2PACX-1vS3kG688sVzBil9uEFa9mXrnpuMAqE0LU1FpH1-TMDCHZF0XjC1265GmhVePdYvrc0_5qyq8OXwIZUb/pub).
+
+9. Use of AI tools like ChatGPT or Bard is NOT prohibited. You are allowed to improve your answer and use it to help other learners while responding to peers' posts. However, desist from using it on the last day of submission of the assignment to generate an answer and post. This means that inputting the given questions into ChatGPT, Bard, or Bing Chat will result in a seemingly logical but finally incorrect and pointless answer. (Citations generated by these tools are also sometimes fake! See [link](https://www.washingtonpost.com/technology/2023/12/29/michael-cohen-ai-google-bard-fake-citations/).) Also, note that your responses are open on a public platform like Discourse where fellow learners can read them. Hence submit your best and original work.
+
+Please contact your instructor at [shyam@study.iitm.ac.in](mailto:shyam@study.iitm.ac.in) if you have any questions, concerns or suggestions for the improvement of these guidelines.
