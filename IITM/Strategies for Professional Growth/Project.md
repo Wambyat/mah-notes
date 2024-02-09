@@ -9,5 +9,3 @@ GP1 Deliverables:
   Deadline for Milestone 1 Submission: 10th February 2024
 
 For assistance with the GP1 milestone, please contact Shyam (shyam@study.iitm.ac.in)
-
-
