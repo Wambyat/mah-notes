@@ -413,4 +413,22 @@ from here on it is a regular network.
 
 <img src="images/Notes/2024-04-27-20-30-19-Screenshot_20240427_203014.png" title="" alt="" data-align="center">
 
-for sum fk the  -ve sign ig
+---
+
+## Week 9
+
+Some SVD stuff ignored.
+
+continuous bag of words model
+
+<img src="images/Notes/2024-04-27-23-39-01-Screenshot_20240427_233850.png" title="" alt="" data-align="center">
+
+skip gram model
+
+<img src="images/Notes/2024-04-27-23-41-14-Screenshot_20240427_234108.png" title="" alt="" data-align="center">
+
+
+
+
+
+![](images/Notes/2024-04-28-00-00-04-Screenshot_20240427_235953.png)
