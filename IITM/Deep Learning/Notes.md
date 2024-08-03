@@ -42,6 +42,8 @@ Full formula here is
 
 $output = \frac{1}{1+r^{-(w_1x+b_1)}}$ 
 
+Range of derivative of sigmoid is 0.25 to 0
+
 ### Error:
 
 Error is used to guide the algorithm.
@@ -165,13 +167,13 @@ While adagrad is more "optimized" for sparse, MGD and NAG are still faster.
 
 We want $\frac{\eta}{\sqrt{v_t+\epsilon}}$ to "decay" so that the sparse values can more effectively add to the history.
 
-AdaGrad does this effectively and sometimes too effectively. When this goes too far, non-sparse factors start to slow down in unintentional ways. 
+AdaGrad does this effectively and sometimes too effectively. When this goes too far, non-sparse factors start to slow down in unintentional ways. DOES NOT OSCILLATE AROUND MINIMA.
 
-This is solved with RmsProp
+This is solved with RMSProp
 
-#### RMSProp
+### RMSProp
 
-The change is we reduce the ability for the history to grow. This is doe by a small change in the formula
+The change is we reduce the ability for the history to grow. This is done by a small change in the formula
 
 $$
 v_t = \beta v_{t-1} + (1-\beta)\nabla w_t^2\\
@@ -426,9 +428,5 @@ continuous bag of words model
 skip gram model
 
 <img src="images/Notes/2024-04-27-23-41-14-Screenshot_20240427_234108.png" title="" alt="" data-align="center">
-
-
-
-
 
 ![](images/Notes/2024-04-28-00-00-04-Screenshot_20240427_235953.png)
