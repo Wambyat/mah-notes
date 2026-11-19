@@ -12,4 +12,6 @@ The forbidden zone helps avoid changes from noise and other degrading factors. M
 
 ---
 
-@1
+# END OF WEEK 1
+
+---
