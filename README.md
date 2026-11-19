@@ -1,2 +1,2 @@
 # Notes
-These are notes I made for my studies.
+These are notes I made for my studies and life.
